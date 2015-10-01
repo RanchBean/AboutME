@@ -5,28 +5,20 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.security.PrivateKey;
-
-public class TitleScreenActivity extends AppCompatActivity {
+public class KappaActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_title_screen);
+        setContentView(R.layout.activity_kappa);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_title_screen, menu);
+        getMenuInflater().inflate(R.menu.menu_kappa, menu);
         return true;
     }
-    private void changeVisibility()
-    {
-
-    }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

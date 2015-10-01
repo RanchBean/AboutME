@@ -1,6 +1,20 @@
 <resources>
     <string name="app_name">About ME</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="StartMessage">Ethan Throndsen All About Me</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_kappa">Kappa</string>
+    <string name="ToKappa">To Kappa</string>
+    <string name="ToLongHair">To Lion's Mane</string>
+    <string name="ToTilt">To Tilt City</string>
+    <string name="ToAuto">To Gearhead </string>
+    <string name="ToMusic">To Music Enthusiast</string>
+
+    <string name="Kappa">Kappa</string>
+    <string name="CopyPasta">Pls no Copy Pastaroni</string>
+    <string name="MyHair">Blondie</string>
+    <string name="Tilt">Tilt 2 Tilt Harder</string>
+    <string name="Auto">Joyride</string>
+    <string name="Music">Enthusiast of Musical Arts</string>
+    <string name="KappaFace">KappaFace</string>
 </resources>
