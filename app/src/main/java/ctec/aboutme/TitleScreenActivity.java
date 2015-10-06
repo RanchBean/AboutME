@@ -4,16 +4,28 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.view.View;
+import android.content.Intent;
+import android.widget.TextView;
 
 import java.security.PrivateKey;
 
-public class TitleScreenActivity extends AppCompatActivity {
+public class TitleScreenActivity extends AppCompatActivity
+{
+    private Button ToKappaButton;
+    private TextView StartMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_title_screen);
+
+        ToKappaButton = (Button) findViewById(R.id.ToKappa);
+
+
+        setupListeners();
     }
 
     @Override
@@ -21,10 +33,6 @@ public class TitleScreenActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_title_screen, menu);
         return true;
-    }
-    private void changeVisibility()
-    {
-
     }
 
 
@@ -41,5 +49,17 @@ public class TitleScreenActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void setupListeners()
+    {
+        ToKappaButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View buttonView)
+            {
+                Intent changeScreen = new Intent(buttonView.getContext(), KappaActivity.class);
+                startActivityForResult(changeScreen, 0);
+            }
+        });
     }
 }

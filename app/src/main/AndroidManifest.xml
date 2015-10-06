@@ -20,6 +20,10 @@
             android:name=".KappaActivity"
             android:label="@string/title_activity_kappa" >
         </activity>
+        <activity
+            android:name=".LongHairActivity"
+            android:label="@string/title_activity_long_hair" >
+        </activity>
     </application>
 
 </manifest>

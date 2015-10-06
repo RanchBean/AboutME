@@ -5,7 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_kappa">Kappa</string>
     <string name="ToKappa">To Kappa</string>
-    <string name="ToLongHair">To Lion's Mane</string>
+    <string name="ToLongHair">To Lion\'s Mane</string>
     <string name="ToTilt">To Tilt City</string>
     <string name="ToAuto">To Gearhead </string>
     <string name="ToMusic">To Music Enthusiast</string>
@@ -17,4 +17,7 @@
     <string name="Auto">Joyride</string>
     <string name="Music">Enthusiast of Musical Arts</string>
     <string name="KappaFace">KappaFace</string>
+    <string name="title_activity_long_hair">LongHairActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>
