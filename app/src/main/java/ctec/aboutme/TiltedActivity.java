@@ -9,20 +9,20 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.content.Intent;
 
-
-public class LongHairActivity extends AppCompatActivity
+public class TiltedActivity extends AppCompatActivity
 {
-
-    private ImageButton ToTilt;
-    private TextView Blondie;
+    private ImageButton ToAuto;
+    private TextView Tilt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_long_hair);
+        setContentView(R.layout.activity_tilted);
 
-        ToTilt = (ImageButton) findViewById(R.id.ToTilted);
-        Blondie = (TextView) findViewById(R.id.Blondie);
+        ToAuto = (ImageButton) findViewById(R.id.ToAuto);
+        Tilt = (TextView) findViewById(R.id.Tilt);
+
+
 
         setupListeners();
     }
@@ -30,7 +30,7 @@ public class LongHairActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_long_hair, menu);
+        getMenuInflater().inflate(R.menu.menu_tilted, menu);
         return true;
     }
 
@@ -50,13 +50,13 @@ public class LongHairActivity extends AppCompatActivity
     }
     private void setupListeners()
     {
-       ToTilt.setOnClickListener(new View.OnClickListener()
-       {
+        ToAuto.setOnClickListener(new View.OnClickListener()
+        {
            public void onClick(View buttonView)
            {
-               Intent changeScreen = new Intent(buttonView.getContext(), TiltedActivity.class);
+               Intent changeScreen = new Intent(buttonView.getContext(), AutoActivity.class);
                startActivityForResult(changeScreen, 0);
            }
-       });
+        });
     }
 }

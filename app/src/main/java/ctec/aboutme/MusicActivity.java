@@ -5,24 +5,23 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
 
-
-public class LongHairActivity extends AppCompatActivity
+public class MusicActivity extends AppCompatActivity
 {
 
-    private ImageButton ToTilt;
-    private TextView Blondie;
+    private TextView Music;
+    private Button Home;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_long_hair);
-
-        ToTilt = (ImageButton) findViewById(R.id.ToTilted);
-        Blondie = (TextView) findViewById(R.id.Blondie);
+        setContentView(R.layout.activity_music);
+       Music = (TextView) findViewById(R.id.Music);
+       Home = (Button) findViewById(R.id.StartScreen);
 
         setupListeners();
     }
@@ -30,7 +29,7 @@ public class LongHairActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_long_hair, menu);
+        getMenuInflater().inflate(R.menu.menu_music, menu);
         return true;
     }
 
@@ -50,13 +49,12 @@ public class LongHairActivity extends AppCompatActivity
     }
     private void setupListeners()
     {
-       ToTilt.setOnClickListener(new View.OnClickListener()
-       {
-           public void onClick(View buttonView)
-           {
-               Intent changeScreen = new Intent(buttonView.getContext(), TiltedActivity.class);
-               startActivityForResult(changeScreen, 0);
-           }
-       });
+        Home.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View buttonView)
+            {
+                Intent changeScreen = new Intent(buttonView.getContext(), TitleScreenActivity.class);
+            }
+        });
     }
 }

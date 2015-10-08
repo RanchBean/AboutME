@@ -9,6 +9,7 @@
     <string name="ToTilt">To Tilt City</string>
     <string name="ToAuto">To Gearhead </string>
     <string name="ToMusic">To Music Enthusiast</string>
+    <string name="ToHome">Back to Start</string>
 
     <string name="Kappa">Kappa</string>
     <string name="CopyPasta">Pls no Copy Pastaroni</string>
@@ -17,7 +18,11 @@
     <string name="Auto">Joyride</string>
     <string name="Music">Enthusiast of Musical Arts</string>
     <string name="KappaFace">KappaFace</string>
-    <string name="title_activity_long_hair">LongHairActivity</string>
+    <string name="Start">Back to Start</string>
 
+    <string name="title_activity_long_hair">LongHairActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tilted">TiltedActivity</string>
+    <string name="title_activity_auto">AutoActivity</string>
+    <string name="title_activity_music">MusicActivity</string>
 </resources>

@@ -24,6 +24,18 @@
             android:name=".LongHairActivity"
             android:label="@string/title_activity_long_hair" >
         </activity>
+        <activity
+            android:name=".TiltedActivity"
+            android:label="@string/title_activity_tilted" >
+        </activity>
+        <activity
+            android:name=".AutoActivity"
+            android:label="@string/title_activity_auto" >
+        </activity>
+        <activity
+            android:name=".MusicActivity"
+            android:label="@string/title_activity_music" >
+        </activity>
     </application>
 
 </manifest>

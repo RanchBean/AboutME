@@ -15,14 +15,16 @@ public class KappaActivity extends AppCompatActivity
 
 {
     private ImageButton ToLongHair;
-    private TextView Kappa;
-    private TextView CopyPasta;
+    private TextView kappa;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kappa);
         ToLongHair = (ImageButton) findViewById(R.id.ToLongHair);
+        kappa = (TextView) findViewById(R.id.Kappa);
+
 
         setupListeners();
 
@@ -55,8 +57,9 @@ public class KappaActivity extends AppCompatActivity
         {
             public void onClick(View buttonView)
             {
-                Intent change Screen = new Inent(buttonView.getcontext(), LongHairActivity.class)
+                Intent changeScreen = new Intent(buttonView.getContext(), LongHairActivity.class);
+                startActivityForResult(changeScreen, 0);
             }
-        }
+        });
     }
 }
