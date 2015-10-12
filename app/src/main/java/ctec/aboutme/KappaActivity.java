@@ -19,7 +19,8 @@ public class KappaActivity extends AppCompatActivity
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kappa);
         ToLongHair = (ImageButton) findViewById(R.id.ToLongHair);
@@ -45,7 +46,8 @@ public class KappaActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_settings)
+        {
             return true;
         }
 
@@ -58,7 +60,7 @@ public class KappaActivity extends AppCompatActivity
             public void onClick(View buttonView)
             {
                 Intent changeScreen = new Intent(buttonView.getContext(), LongHairActivity.class);
-                startActivityForResult(changeScreen, 0);
+                startActivityForResult(changeScreen, 1);
             }
         });
     }

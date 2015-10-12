@@ -15,9 +15,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Equalizer"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="40dp" />
+        android:background="@drawable/ipad_31292_2d_black_and_white_equalizer"
+        android:layout_marginTop="289dp"
+        android:layout_below="@+id/Auto"
+        android:layout_toRightOf="@+id/Auto"
+        android:layout_toEndOf="@+id/Auto"
+        android:layout_marginLeft="102dp"
+        android:layout_marginStart="102dp" />
 
 </RelativeLayout>

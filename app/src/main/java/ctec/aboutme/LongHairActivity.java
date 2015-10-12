@@ -17,9 +17,11 @@ public class LongHairActivity extends AppCompatActivity
     private TextView Blondie;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_long_hair);
+
 
         ToTilt = (ImageButton) findViewById(R.id.ToTilted);
         Blondie = (TextView) findViewById(R.id.Blondie);

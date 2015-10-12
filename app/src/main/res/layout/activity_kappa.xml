@@ -20,10 +20,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ToLongHair"
-        android:background="@drawable/Kappa"
-        android:layout_marginTop="219dp"
+        android:background="@drawable/keepo"
+        android:layout_marginTop="171dp"
         android:layout_below="@+id/Kappa"
-        android:layout_marginLeft="136dp"
-        android:layout_marginStart="136dp" />
+        android:layout_toRightOf="@+id/Kappa"
+        android:layout_toEndOf="@+id/Kappa"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp" />
 
 </RelativeLayout>
